@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="SmartMuseum.PageSmartMuseum2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SmartMuseum"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageSmartMuseum2">
+
+    <StackPanel Background="MistyRose">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Image Source="790262506.jpg" Grid.Column="0" Grid.Row="0" Height="120" Width="180"/>
+            <Image Source="foto2_2pagina.jpg" Grid.Column="1" Grid.Row="0" Height="120" Width="180" />
+            <Image Source="foto3_2pagina.jpeg" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1" Height="120" Width="180"/>
+
+
+            <RadioButton x:Name="rdbQuadro1" GroupName="Quadro" Grid.Row="0" Grid.Column="0" Content="quadro1" FontSize="18" FontWeight="Bold" Foreground="Black" Padding="0,0,255,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <RadioButton x:Name="rdbQuadro2" GroupName="Quadro" Grid.Row="0" Grid.Column="1" Content="quadro2" FontSize="18" FontWeight="Bold" Foreground="Black" Padding="0,0,280,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <RadioButton x:Name="rdbQuadro3" GroupName="Quadro" Grid.Row="1" Grid.Column="0" Content="quadro3" FontSize="18" FontWeight="Bold" Foreground="Black" Padding="0,0,110,0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+            <Button x:Name="Stampa" Content="Stampa" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60"  Width="154" Click="Stampa_Click"/>
+
+            <Label Content="Dettaglio quadro:"  Grid.Row="2" Grid.Column="0" FontSize="18" Width="180" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <Label x:Name="lblQuadro" Grid.Row="2" Grid.Column="1" Width="450" Height="100"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Button x:Name="Prossima_Pagina2" Content="Next" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="Prossima_Pagina2_Click"/>
+        </Grid>
+    </StackPanel>
+</Window>
