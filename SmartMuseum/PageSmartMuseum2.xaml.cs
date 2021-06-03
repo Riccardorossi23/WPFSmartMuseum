@@ -51,6 +51,7 @@ namespace SmartMuseum
         {
             new PageSmartMuseum3().ShowDialog();
         }
+
     }
 }
 
