@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageSmartMuseum3">
-    <StackPanel Background="MistyRose">
+    <StackPanel Background="MistyRose" >
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>

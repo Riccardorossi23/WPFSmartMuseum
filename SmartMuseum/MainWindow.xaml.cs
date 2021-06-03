@@ -43,7 +43,7 @@ namespace SmartMuseum
             }
             else if (rdbQuadro3.IsChecked == false && rdbQuadro2.IsChecked == false && rdbQuadro1.IsChecked == false)
             {
-                MessageBox.Show("selezionare un quadro", "ERROR", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+                MessageBox.Show("selezionare un quadro", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

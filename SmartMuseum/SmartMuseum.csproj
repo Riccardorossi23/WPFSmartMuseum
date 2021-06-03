@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>png-transparent-encryption-computer-icons-favicon-encryption-ico-miscellaneous-purple-violet.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -134,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="foto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="onlinelogomaker-052621-1654-9151-2000-transparent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-transparent-encryption-computer-icons-favicon-encryption-ico-miscellaneous-purple-violet.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
