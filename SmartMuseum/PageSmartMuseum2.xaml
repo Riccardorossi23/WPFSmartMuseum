@@ -6,7 +6,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SmartMuseum"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="520" d:DesignWidth="800"
       Title="PageSmartMuseum2">
 
     <StackPanel Background="MistyRose">
@@ -18,6 +18,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="120"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
@@ -32,9 +33,13 @@
 
             <Button x:Name="Stampa" Content="Stampa" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60"  Width="154" Click="Stampa_Click"/>
 
-            <Label Content="Dettaglio quadro:"  Grid.Row="2" Grid.Column="0" FontSize="18" Width="180" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-            <Label x:Name="lblQuadro" Grid.Row="2" Grid.Column="1" Width="450" Height="100"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Button x:Name="Prossima_Pagina2" Content="Next" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="Prossima_Pagina2_Click"/>
+            <Label Content="Dettaglio quadro"  Grid.Row="2" Grid.Column="0" FontSize="18" Width="180" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Label Content="picture name:" Grid.Row="2" Grid.Column="1" Width="90" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Label x:Name="lblnome_quadro" Grid.Row="2" Grid.Column="1" Width="220" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label x:Name="lblQuadro" Grid.Row="3" Grid.Column="1" Width="450" Height="100"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Label Content="author:" Grid.Row="2" Grid.Column="0" Width="50" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label x:Name="lblautore" Grid.Row="2" Grid.Column="0" Width="180" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <Button x:Name="Prossima_Pagina2" Content="Next" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="Prossima_Pagina2_Click"/>
         </Grid>
     </StackPanel>
 </Window>

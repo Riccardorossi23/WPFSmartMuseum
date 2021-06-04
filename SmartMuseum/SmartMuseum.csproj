@@ -144,5 +144,11 @@
   <ItemGroup>
     <Resource Include="png-transparent-encryption-computer-icons-favicon-encryption-ico-miscellaneous-purple-violet.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassSmartMuseum\ClassSmartMuseum.csproj">
+      <Project>{bd9e3555-b8fe-48bc-b2e9-277a95ba98fa}</Project>
+      <Name>ClassSmartMuseum</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
