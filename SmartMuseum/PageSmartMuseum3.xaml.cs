@@ -1,6 +1,7 @@
 ﻿using ClassSmartMuseum;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,12 @@ namespace SmartMuseum
             {
                 MessageBox.Show("selezionare un quadro", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void Restaurant_Click(object sender, RoutedEventArgs e)
+        {
+            
+            System.Diagnostics.Process.Start("https://xn--menrestaurantmuseum-i8b.weebly.com/");
         }
     }
 }

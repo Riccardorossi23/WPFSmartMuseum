@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SmartMuseum"
       mc:Ignorable="d" 
-      d:DesignHeight="520" d:DesignWidth="800"
+      d:DesignHeight="580" d:DesignWidth="800"
       Title="PageSmartMuseum3">
     <StackPanel Background="MistyRose" >
         <Grid>
@@ -16,6 +16,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="120"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="60"/>
@@ -32,11 +33,18 @@
             <Button x:Name="Stampa" Content="Stampa" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60"  Width="154" Click="Stampa_Click"/>
 
             <Label Content="Dettaglio quadro"  Grid.Row="2" Grid.Column="0" FontSize="18" Width="180" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-            <Label Content="picture name:" Grid.Row="2" Grid.Column="1" Width="90" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="lblnome_quadro" Grid.Row="2" Grid.Column="1" Width="220" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Label x:Name="lblQuadro" Grid.Row="3" Grid.Column="1" Width="450" Height="100"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label Content="author:" Grid.Row="2" Grid.Column="0" Width="50" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Label x:Name="lblautore" Grid.Row="2" Grid.Column="0" Width="180" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+            <Label Content="author:" Grid.Row="2" Grid.Column="0" Width="50" Height="25"  VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <Label x:Name="lblautore" Grid.Row="3" Grid.Column="0" Width="180" Height="40" HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+            <Label Content="picture name:" Grid.Row="2" Grid.Column="1" Width="90" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <Label x:Name="lblnome_quadro" Grid.Row="3" Grid.Column="1" Width="220" Height="40"  HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+            <Label Content="Descrizione:"  Grid.Row="4" Grid.Column="0" Width="110" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            <Label x:Name="lblQuadro" Grid.Row="4" Grid.Column="1" Width="450" Height="120" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+
+            <Button x:Name="btnRestaurant" Content="Restaurant" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="Restaurant_Click"/>
+
         </Grid>
     </StackPanel>
 </Window>
